@@ -10,7 +10,7 @@ namespace StockAccountManagement
     public class Stocks
     {
         public string StockName;
-        public int shares;
+        public int Shares;
         public int Price;
     }
     public class StockDetails

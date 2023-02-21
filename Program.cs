@@ -16,9 +16,12 @@
 
             for (int i = 0; i < data.stocks.Count; i++)
             {
-                Console.WriteLine(data.stocks[i].StockName);
-                Console.WriteLine("shares: " + data.stocks[i].shares);
+                Console.WriteLine("\n"+data.stocks[i].StockName);
+                Console.WriteLine("shares: " + data.stocks[i].Shares);
                 Console.WriteLine("price: " + data.stocks[i].Price);
+
+                int TotalValue = data.stocks[i].Shares * data.stocks[i].Price;
+                Console.WriteLine("\nThe Total Value of {0} for {1} shares is: {2} ", data.stocks[i].StockName, data.stocks[i].Shares, TotalValue);
                 Console.WriteLine("-------------------------------");
             }
         }
